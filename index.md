@@ -2,43 +2,44 @@
 
 ## Elevator Pitch
 
-Replace this with a one sentence pitch for your game. Pretend that your were pitching your game to a executive going to the elevator, and you only had 60 seconds. You should not write more than a few sentences at most. Check [this resource](http://www.gameacademy.com/perfecting-indie-games-elevator-pitch/) for more information.
+You are stuck in a dungeon, and you don't know how you got there. You cannot move your legs; instead, you are presented with a text box and a paper that says "use the cd to escape". Your objective is to escape the dungeon using the cd command, picking up variations of it, and different commands along the way to help you with your escape.
 
 ## Influences (Brief)
 
-- *Influence #1*:
-  - Medium: *(Television, Games, Literature, Movies, etc.)*
-  - Explanation: *In one paragraph or less, explain why this is an influence.*
-- *Influence #2*:
-  - Medium: *(Television, Games, Literature, Movies, etc.)*
-  - Explanation: *In one paragraph or less, explain why this is an influence.*
-- *Influence #3*:
-  - Medium: *(Television, Games, Literature, Movies, etc.)*
-  - Explanation: *In one paragraph or less, explain why this is an influence.*
+- 3D Monster Maze:
+  - Medium: PC Game
+  - Explanation: Its visuals simulate a 3D environment; however, it is only 2D images. It is the type of aesthetic we tried to achieve with this game.
+- Colossal Cave Adventure:
+  - Medium: PC Game
+  - Explanation: The game shows how actions written in a text section make the character perform actions. This was our reference for our mechanic of moving using terminal commands.
 
 ## Core Gameplay Mechanics (Brief)
 
-*Give a very high-level description of any core gameplay mechanics*
-
-- *Gameplay Mechanic #1*
-- *Gameplay Mechanic #2*
-- *Gameplay Mechanic #3*
-- *Gameplay Mechanic #4*
+- Move through the dungeon by writing the name of the passages in front of you, using the "cd" terminal command in a text box.
+- The passage name written with the "cd" command must be written with appropriate casing and syntax.
+- Return to the previous room you were in by using the "cd .." command properly.
+- When the "cd" command is properly written, the player will move to another room/scene, where it can be a new passage or a room.
+- When entering any room/passage, the player can write the "ls" command to inspect their current location.
+- The player can also write the "ls -a" command to unravel possible secrets hidden in the rooms/passages.
+- Entering a command with wrong syntax will result in a message indicating what has been written wrong.
+- The player will need to find certain objects to open specific doors to escape the dungeon.
+- When the player escapes the dungeon, the game changes into a new scene, indicating that the player has won.
 
 # Learning Aspects
 
 ## Learning Domains
 
-*Briefly list any and all of the disciplines and learning domains for this subject.*
+Correct use and implementation of terminal commands "cd" and "ls", including variations and different forms such as "cd .." and "ls -a".
 
 ## Target Audiences
 
-*Who are your learners?*
+- Novice programmers with little to no knowledge of navigating a terminal.
+- Aimed for early university students and advanced high school students.
 
 ## Target Contexts
 
-*Describe what kinds of formal and informal learning contexts this will be used in (e.g., courses, k-12 computer labs during free time).*
-
+- The game would be assigned as a practice, which would then be tested to see if students were able to comprehend the use of both "cd" and "ls" commands.
+  
 ## Learning Objectives
 
 *Remember, Learning Objectives are NOT simply topics. They are statements of observable behavior that a learner can do after the learning experience. You cannot observe someone "understanding" or "knowing" something.*
@@ -74,34 +75,42 @@ Replace this with a one sentence pitch for your game. Pretend that your were pit
 
 ## Player Interaction Pattern
 
-*Describe how people play your game, how many players are involved at once, how they interact with the system works, etc.*
+Single player game. The player controls their movements and actions through writing terminal commands.
 
 ## Player Modes
 
 *Your game has one or more player modes. Describe each discrete mode, considering things like menus too. Generally describe the transitions between modes too.*
 
-- *Player mode #1*: *Description*
-- *Player mode #2*: *Description*
-- *etc.*
+- Single Player: Player moves around the dungeon, looking for items to open doors and, eventually, escape.
+- Main Menu: The player will see a start menu which will allow them to start the game, quit it, and adjust the volume.
 
 # Gameplay Objectives
 
-- *Primary Objective #1*:
-    - Description: *Description*
+- Gather key items:
+    - Description: When key items are collected, the player will be able to open doors and advance to new areas. 
     - Alignment: *Describe how this aligns with one or more learning objectives*
-- *Primary Objective #2*:
-    - Description: *Description*
+- Gather mask pieces:
+    - Description: When the player gathers all the pieces of a mask, it will open the final door, which will allow the player to escape the dungeon.
     - Alignment: *Describe how this aligns with one or more learning objectives*
-- *etc.*
+- Collect new commands:
+    - Description: The player will gather small notes that will allow him to introduce new commands in the text box, doing new things.
+    - Alignment: *Describe how this aligns with one or more learning objectives*
 
 # Procedures/Actions
 
-*Describe the control scheme and what actions a user can take in the game.*
+- A text box will be presented for the player to input terminal commands.
+- Passage names represent files found in directories in a terminal command.
 
 # Rules
 
-*What resources are available to the player that they make use of?  How does this affect gameplay? How are these resources finite?*
+- If the player enters the right "cd" command with an existing passage name, the player changes scenes to a new passage with new names.
+- If the player enters the right "ls" command with an existing passage/room name, the player is shown what things they can interact with.
+- If the player enters either the "cd" or the "ls" command incorrectly, an error message appears that says "Command does not exist".
+- If the player enters a correct command, but an incorrect passage/
 
+- - An incorrect passage name will result in a text saying "There's no passage with that name".
+- An incorrect writing of the "cd" keyword will result in a text saying 
+- 
 # Objects/Entities
 
 *What other things are in the world that you need to design? These may or may not directly translate to actual objects and classes.*
