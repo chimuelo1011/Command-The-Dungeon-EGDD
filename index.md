@@ -79,8 +79,6 @@ Single player game. The player controls their movements and actions through writ
 
 ## Player Modes
 
-*Your game has one or more player modes. Describe each discrete mode, considering things like menus too. Generally describe the transitions between modes too.*
-
 - Single Player: Player moves around the dungeon, looking for items to open doors and, eventually, escape.
 - Main Menu: The player will see a start menu which will allow them to start the game, quit it, and adjust the volume.
 
@@ -103,17 +101,19 @@ Single player game. The player controls their movements and actions through writ
 
 # Rules
 
-- If the player enters the right "cd" command with an existing passage name, the player changes scenes to a new passage with new names.
+- If the player enters the right "cd" command with an existing passage/room name, it will change scenes to a new passage/room with new names.
 - If the player enters the right "ls" command with an existing passage/room name, the player is shown what things they can interact with.
-- If the player enters either the "cd" or the "ls" command incorrectly, an error message appears that says "Command does not exist".
-- If the player enters a correct command, but an incorrect passage/
-
-- - An incorrect passage name will result in a text saying "There's no passage with that name".
-- An incorrect writing of the "cd" keyword will result in a text saying 
-- 
+- If the player enters either the "cd" or the "ls", or any of its variations, command incorrectly, an error message appears that says "Command does not exist".
+- If the player enters the "cd .." command, the player will be sent back to the previous passage/room they have previously been in.
+- If the player enters the "ls -a" command, the player is shown what things they can interact with, plus secret things not shown with "ls".
+- An incorrect passage name will result in a text saying "There's no passage with that name".
+  
 # Objects/Entities
 
-*What other things are in the world that you need to design? These may or may not directly translate to actual objects and classes.*
+- An interactable live skeleton that makes a variable true for the player to use the "ls -a" command.
+- An interactable mask that provides the player with the main goal of the game.
+- A text box in the lower center of the screen where the player can write the commands.
+- 
 
 ## Core Gameplay Mechanics (Detailed)
 
@@ -123,49 +123,51 @@ Single player game. The player controls their movements and actions through writ
 
     
 ## Feedback
-
+-
 *Explicitly describe what visual/audio/animation indicators there are that give players feedback on their progress towards their gameplay objectives (and ideally the learning objectives).*
 
 *Describe what longer-term feedback you detect and give that guides the player in their learning and lets them know how they are doing in regards to the learning objectives.*
+- 
 
 # Story and Gameplay
 
 ## Presentation of Rules
-
+- 
 *Briefly describe how the player will learn the gameplay mechanics. Avoid using walls of text, since people will not read them. Think instead of natural ways of teaching mechanics iteratively and slowly.*
+- 
 
 ## Presentation of Content
-
+- 
 *Briefly describe how the player will be taught the core material they are meant to learn. Avoid using walls of text, since people will not read them. Think instead of natural ways of teaching material iteratively and slowly.*
+- 
 
 ## Story (Brief)
 
-*The Summary or TL;DR version of below*
+You are trapped in an unknown dungeon, and you are incapacitated. You must use command terminals to get out.
 
 ## Storyboarding
-
+- 
 *Go into as much detail as needs be to visually convey the Dynamics of your game. Be detailed. Create storyboards and freeze frame images that concisely capture important key elements of your game. You are strongly recommended to sketch pictures on paper and embed them here. Be sure make it clear how previously-described mechanics come through in the dynamics.*
+- 
 
 # Assets Needed
 
 ## Aethestics
 
-*Give a sense of the aesthetics of your game, the spirit and atmosphere. Use descriptive, evocative words that can help the reader understand the emotional response of your game.*
+The game should be a simple pixel art, but one that simulates that the player is in a 3D space, simulating a dungeon. It should be visually appealing enough so that the player wants to explore it.
 
 ## Graphical
 
 - Characters List
-  - *Characters 1*
+  - Skeleton in room: Should be in a sitting position, and be composed of two parts: Body, which remains static, and skull, which will have two frames, indicating that it is talking.
   - *Characters 2*
   - *...*
-- Textures:
-  - *Texture 1*
-  - *Texture 2*
-  - *...*
+- Textures: N/A
 - Environment Art/Textures:
-  - *Environment Texture 1*
-  - *Environment Texture 2*
-  - *...*
+  - Walls: Should replicate an old stone brick wall. Not many details, but enough to make it look rocky.
+  - Floor: The floor should follow the same logic as the wall.
+  - Doors: The doors are to represent that they are made out of wood, and simulate old medieval doors with an arch at the top. They should have a door handle for more immersion.
+  - Final door: The final door will have the same design as the normal doors, with the difference that it will have a hole in the center, where a mask would go and unlock it.
 
 
 ## Audio
