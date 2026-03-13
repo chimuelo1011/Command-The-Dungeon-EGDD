@@ -153,7 +153,7 @@ They will be briefly introduced to one mechanic at a time and slowly spend time 
 You are trapped in an unknown dungeon, and you are incapacitated. You must use command terminals to get out.
 
 ## Storyboarding
-![Moving from one place to another](SBImages/ls1.jpeg)
+<img src="SBImages/ls1.jpeg" width="400" height="300">
 
 # Assets Needed
 
