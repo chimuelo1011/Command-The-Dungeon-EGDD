@@ -44,22 +44,26 @@ Correct use and implementation of terminal commands "cd" and "ls", including var
 
 *Remember, Learning Objectives are NOT simply topics. They are statements of observable behavior that a learner can do after the learning experience. You cannot observe someone "understanding" or "knowing" something.*
 
-- *Short Name*: *Formal Learning Objective #1*
-- *Short Name*: *Formal Learning Objective #2*
-- *Short Name*: *Formal Learning Objective #3*
+- Write commands in the console to navigate to a folder in the current directory
+- Write commands in the console to navigate to a folder in the parent directory
+- Write commands in the console to find and navigate to a hidden file in the current directory
 
 ## Prerequisite Knowledge
 
 *What do they need to know prior to trying this game?*
 
-- *Prerequisite Learning Objective #1*
-- *Prerequisite Learning Objective #2*
+- Write words on the keyboard
+- Explain what cd is meant to do
 
 ## Assessment Measures
 
 *Clearly identify a set of viable assessment questions AND their grading logic. The questions should be specific examples of the kinds of questions that your game could conceivably improve student performance on. For the grading logic, it could be the correct answer, a rubric for evaluating the answer, or exact logic for deriving answers.*
 
-
+Write the console commands you would use to do the following:
+- Find file names in your folder *Answer: ls*
+- Enter a folder names a within the current folder *Answer: cd a*
+- Return to the parent folder *cd ..*
+- Find the name of the hidden file in your folder *ls -a*
 
 # What sets this project apart?
 
@@ -117,8 +121,8 @@ Single player game. The player controls their movements and actions through writ
 
 ## Core Gameplay Mechanics (Detailed)
 
-- *Core Gameplay Mechanic #1*: *Describe in 2 paragraphs or less, along with how it generally works*
-- *Core Gameplay Mechanic #2*: *Describe in 2 paragraphs or less, along with how it generally works*
+- Type in a command and press enter to use it. Correct commands can result in moving to the right place and/or finding the right files.
+- Some enterences will require travel to specific locations to open them, incentivising exploration while also slightly enforcing it.
 - *Core Gameplay Mechanic #3*: *Describe in 2 paragraphs or less, along with how it generally works*
 
     
@@ -127,19 +131,19 @@ Single player game. The player controls their movements and actions through writ
 *Explicitly describe what visual/audio/animation indicators there are that give players feedback on their progress towards their gameplay objectives (and ideally the learning objectives).*
 
 *Describe what longer-term feedback you detect and give that guides the player in their learning and lets them know how they are doing in regards to the learning objectives.*
-- 
+- At certain points in the game, they will be shown commands to be introduced to them. After that, using something other than those commands would be beyond the scope of the game, but using commands incorrectly would give some feedback. For example, cding to a nonexistent folder would show an error that the folder doesn't exist and probably hint at using ls.
 
 # Story and Gameplay
 
 ## Presentation of Rules
 - 
 *Briefly describe how the player will learn the gameplay mechanics. Avoid using walls of text, since people will not read them. Think instead of natural ways of teaching mechanics iteratively and slowly.*
-- 
+- The core gameplay mechanics are simple so rather than worrying about them forgetting or ignoring what they are, the game will slowly give the player the chance to learn how to apply it hands on. Small hints and directions may be given to make it easier for players newer to the topic to deduce the correct command.
 
 ## Presentation of Content
 - 
 *Briefly describe how the player will be taught the core material they are meant to learn. Avoid using walls of text, since people will not read them. Think instead of natural ways of teaching material iteratively and slowly.*
-- 
+- They will briefly be introduced to one mechanic at a time and slowly spend time applying that mechanic. Repeatedly using a few major mechanics should be good for memory.
 
 ## Story (Brief)
 
