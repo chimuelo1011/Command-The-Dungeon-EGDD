@@ -54,6 +54,8 @@ Correct use and implementation of terminal commands "cd" and "ls", including var
 
 - Write words on the keyboard
 - Explain what cd is meant to do
+- Explain what ls is meant to do
+- Explain what mov is meant to do
 
 ## Assessment Measures
 
@@ -64,6 +66,7 @@ Write the console commands you would use to do the following:
 - Enter a folder names a within the current folder *Answer: cd a*
 - Return to the parent folder *cd ..*
 - Find the name of the hidden file in your folder *ls -a*
+- Move a file from one place to another.
 
 # What sets this project apart?
 
@@ -107,7 +110,8 @@ Single player game. The player controls their movements and actions through writ
 
 - If the player enters the right "cd" command with an existing passage/room name, it will change scenes to a new passage/room with new names.
 - If the player enters the right "ls" command with an existing passage/room name, the player is shown what things they can interact with.
-- If the player enters either the "cd" or the "ls", or any of its variations, command incorrectly, an error message appears that says "Command does not exist".
+- If the player enters the right "mov" command with an existing Object name, the player be able to put that object in its items, or use it somewhere else..
+- If the player enters either the "cd", "ls", or the "mov" command, or any of its variations, command incorrectly, an error message appears that says "Command does not exist".
 - If the player enters the "cd .." command, the player will be sent back to the previous passage/room they have previously been in.
 - If the player enters the "ls -a" command, the player is shown what things they can interact with, plus secret things not shown with "ls".
 - An incorrect passage name will result in a text saying "There's no passage with that name".
@@ -117,21 +121,23 @@ Single player game. The player controls their movements and actions through writ
 - An interactable live skeleton that makes a variable true for the player to use the "ls -a" command.
 - An interactable mask that provides the player with the main goal of the game.
 - A text box in the lower center of the screen where the player can write the commands.
-- 
+- Doors that will require keys in order to be open.
 
 ## Core Gameplay Mechanics (Detailed)
 
-- Type in a command and press enter to use it. Correct commands can result in moving to the right place and/or finding the right files.
-- Some enterences will require travel to specific locations to open them, incentivising exploration while also slightly enforcing it.
-- *Core Gameplay Mechanic #3*: *Describe in 2 paragraphs or less, along with how it generally works*
+- Write commands in the text box and press enter to use it.
+    - ls: To inspect the current area.
+    - cd: To move from one space into another.
+    - mov: To move an object from one space to another.
+- Doors will require specific items to open them.
+- Player will use enter to keep dialogue going when talking to entities.
+- Talking to entities can unravel more story, or award new abilities.
+- Player will be able to grab objects and store them for later use.
+- Collect 4 pieces of a mask to open the final door.
 
     
 ## Feedback
--
-*Explicitly describe what visual/audio/animation indicators there are that give players feedback on their progress towards their gameplay objectives (and ideally the learning objectives).*
-
-*Describe what longer-term feedback you detect and give that guides the player in their learning and lets them know how they are doing in regards to the learning objectives.*
-- At certain points in the game, they will be shown commands to be introduced to them. After that, using something other than those commands would be beyond the scope of the game, but using commands incorrectly would give some feedback. For example, cding to a nonexistent folder would show an error that the folder doesn't exist and probably hint at using ls.
+At certain points in the game, they will be shown commands to be introduced to them. After that, using something other than those commands would be beyond the scope of the game, but using commands incorrectly would give some feedback. For example, cding to a nonexistent folder would show an error that the folder doesn't exist and probably hint at using ls.
 
 # Story and Gameplay
 
