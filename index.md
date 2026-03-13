@@ -153,7 +153,37 @@ They will be briefly introduced to one mechanic at a time and slowly spend time 
 You are trapped in an unknown dungeon, and you are incapacitated. You must use command terminals to get out.
 
 ## Storyboarding
-<img src="SBImages/ls1.jpeg" width="400" height="300">
+Movement & Showing passages:
+<p>
+<img src="SBImages/ls1.jpeg" width="300" height="400">
+<img src="SBImages/cd1.jpeg" width="300" height="400">
+<img src="SBImages/ChangeRoom.jpeg" width="300" height="400">
+<img src="SBImages/cdReturn.jpeg" width="300" height="400">
+</p>
+
+Interact with Entities & Showing Objects:
+<p>
+<img src="SBImages/ls2.jpeg" width="300" height="400">
+<img src="SBImages/cdSkeleton.jpeg" width="300" height="400">
+<img src="SBImages/SkeletonTalk.jpeg" width="300" height="400">
+</p>
+
+Interact with Items:
+<p>
+<img src="SBImages/mv1.jpeg" width="300" height="400">
+<img src="SBImages/ls3.jpeg" width="300" height="400">
+<img src="SBImages/mv2.jpeg" width="300" height="400">
+</p>
+
+Locked Door
+<p>
+<img src="SBImages/cdLockedDoor.jpeg" width="300" height="400">
+</p>
+
+Reveal Hidden Objects:
+<p>
+<img src="SBImages/lsHidden.jpeg" width="300" height="400">
+</p>
 
 # Assets Needed
 
