@@ -63,9 +63,9 @@ For the next six questions, assume you are looking at the console on a computer.
 - Switch the current directory to the folder named a. *Answer: cd a*
 - Find file names in your folder. *Answer: ls*
 - Return to the parent directory. *Answer: cd ..*
-- Move the file image.png from the folder a into the folder b. *mv ./a/image.png ./b*
-- Switch the current directory to the folder named b. *cd b*
-- Check for hidden files within the current directory. *ls -a*
+- Move the file image.png from the folder a into the folder b. *Answer: mv ./a/image.png ./b*
+- Switch the current directory to the folder named b. *Answer: cd b*
+- Check for hidden files within the current directory. *Answer: ls -a*
 
 # What sets this project apart?
 
