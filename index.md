@@ -58,14 +58,14 @@ Correct use and implementation of terminal commands "cd", "ls", and "mv", includ
 
 *Clearly identify a set of viable assessment questions AND their grading logic. The questions should be specific examples of the kinds of questions that your game could conceivably improve student performance on. For the grading logic, it could be the correct answer, a rubric for evaluating the answer, or exact logic for deriving answers.*
 
-For the next few questions, assume you are looking at the console on a computer. In the current directory you see two folders named a and b. Write the console commands to do each of the following tasks.
+For the next six questions, assume you are looking at the console on a computer. In the current directory you see two folders named a and b. Write the console commands to do each of the following tasks.
 
-a. Switch the current directory to the folder named a. *Answer: cd a*
-b. Find file names in your folder. *Answer: ls*
-c. Return to the parent directory. *Answer: cd ..*
-d. Move the file image.png from the folder a into the folder b. *mv ./a/image.png ./b*
-e. Switch the current directory to the folder named b. *cd b*
-f. Check for hidden files within the current directory. *ls -a*
+- Switch the current directory to the folder named a. *Answer: cd a*
+- Find file names in your folder. *Answer: ls*
+- Return to the parent directory. *Answer: cd ..*
+- Move the file image.png from the folder a into the folder b. *mv ./a/image.png ./b*
+- Switch the current directory to the folder named b. *cd b*
+- Check for hidden files within the current directory. *ls -a*
 
 # What sets this project apart?
 
